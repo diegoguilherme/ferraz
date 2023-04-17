@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Orçamento Inicial</h1>
+    <div class="resume">
+      <div>
+        Total Parcial: R$
+        <span class="incomes">0.00</span>
+      </div>
+   
+    </div>
+    <div class="newItem">
+      <div class="divDesc">
+        <label for="desc">Descrição</label>
+        <select id="desc">
+          <option></option>
+          <option>Alvenaria</option>
+          <option>Cobertura</option>
+          <option>Escadas</option>
+          <option>Esquadrias de ferro</option>
+          <option>Esquadrias de madeira</option>
+          <option>Esquadrias em alumínio/vidro</option>
+          <option>Impermeabilização</option>
+          <option>Instalações complementares</option>
+          <option>Lajes</option>
+          <option>Limpeza da obra</option>
+          <option>Louças/Bancadas</option>
+          <option>Muro de divisa</option>
+          <option>Pinturas</option>
+          <option>Piscina</option>
+          <option>Pisos</option>
+          <option>Retangulões/Arrimos</option>
+          <option>Revestimentos de fachadas</option>
+          <option>Revestimentos de paredes</option>
+          <option>Revestimentos tetos/forros</option>
+          <option>Rodapés/Soleiras/Peitoris</option>
+          <option>Serviços complementares</option>
+          <option>Serviços preliminares</option>
+          <option>Sub-Estrutura</option>
+          <option>Super- Estrutura</option>
+          <option>Tubulões/Sapatas</option>
+          <option>Vigas de fundação</option>
+        </select>
+      </div>
+      <div class="divAmount">
+        <label for="amount">Valor</label>
+        <input type="number" id="amount" />
+      </div>
+      <div class="divType">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option>Entrada</option>
+          <option>Saída</option>
+        </select>
+      </div>
+      <button id="btnNew">Incluir</button>
+    </div>
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th class="columnAmount">Valor</th>
+            <th class="columnType">Tipo</th>
+            <th class="columnAction"></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+  </main>  
+
+  <script src="script.js"></script>
+</body>
+</html>
